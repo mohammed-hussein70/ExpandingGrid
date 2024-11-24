@@ -1,0 +1,41 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 5px;
+}
+.col {
+  background-color: #aaa;
+  margin: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+}
+.cont {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  padding: 50px 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  line-height: 1.8;
+  font-size: 18px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .cont {
+    width: 90%;
+  }
+}
+.cont span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  padding: 0 5px;
+  cursor: pointer;
+  font-size: 35px;
+  color: white;
+  &:hover {
+    color: black;
+  }
+}
